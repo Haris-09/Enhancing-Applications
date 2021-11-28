@@ -3,8 +3,8 @@
 # Variables
 resourceGroup="acdnd-c4-project"
 clusterName="udacity-cluster"
-region="westeurope"
-myAcrName="myacr202106"
+region="westus"
+myAcrName="myacr202107"
 
 # Install aks cli
 echo "Installing AKS CLI"
@@ -56,7 +56,7 @@ echo "Verifying connection to $clusterName"
 kubectl get nodes
 
 echo "Deploying to AKS cluster"
-The command below will deploy a standard application to your AKS cluster.
+# The command below will deploy a standard application to your AKS cluster.
 kubectl apply -f ../azure-vote-all-in-one-redis.yaml
 # Test the application at the External IP
 # It will take a few minutes to come alive.
